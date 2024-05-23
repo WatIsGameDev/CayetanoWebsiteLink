@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>GlaciAir</title>
+</head>
+<body> 
+    <header>
+        <a href="index.html"><img src="images/logo.svg" class="logo" alt=""></a>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit" id="search-button"><img src="images/search.png" alt="searchicon" width="20" height="20"></button>
+                <div class="search-suggestions"></div>
+            </div>
+            <button id="cart-button"><img src="images/cart.svg" id="navcart" alt=""></button>
+        </nav>
+    </header>
+
+  
+    <div id="cart-sidebar" class="cart-sidebar close" >
+        <button id="close-cart">&times;</button>
+        <h3>Your Cart</h3>
+        <div class="just-container">
+            <div id="cart-items">
+                <!-- Cart items will be appended here -->
+            </div>
+        </div>
+     
+        <button id="checkout-btn">CHECKOUT</button>
+        <h3 id="total-price"></h3>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="haha">&times;</span>
+            <h2>Checkout Summary</h2>
+            <div id="checkout-summary"></div>
+            <button id="confirm-checkout">Confirm Checkout</button>
+        </div>
+    </div>
+
+
+    <section id="prodetails" class="section-p2">
+        <div class="single-pro-image">
+
+            <div class="large-image">
+                <img src="images/case5.svg" width="100%" id="MainImage" alt="">
+            </div>
+         
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/case5.svg" width="100%" class="small-img" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="images/case4.svg" width="100%" class="small-img" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="images/case3.svg" width="100%" class="small-img" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="images/case2.svg" width="100%" class="small-img" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / PC Case</h6>
+            <h4>GlaciAir PC Case</h4>
+            <h2>$69.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>ATX</option>
+                <option>M-ATX</option>
+            </select>
+            <input type="number" value="1" id="quantity-input">
+            <button class="addCartButton" data-product-name="GlaciAir PC Case" data-price="69.00" data-image="images/case5.svg">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>This is a sample description for any GlaciAir PC Case products. GlaciAir is a
+                company dedicated to innovate on Gaming PC Cases, prioritizing airflow without the need
+                of sacrificing quality and aesthetics.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>More Products from GlaciAir</h2>
+        <p>In CASE you want more.</p>
+        <div class="pro-container">
+
+            <div class="pro">
+                <img src="images/case5.svg" alt="">
+
+                <div class="des"> 
+                    <h5>Pc case 1</h5>
+
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$79</h4>
+                </div>
+
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+
+            </div>
+            <div class="pro">
+                <img src="images/case5.svg" alt="">
+
+                <div class="des"> 
+                    <h5>Pc case 1</h5>
+
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$59</h4>
+                </div>
+
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+
+            </div>
+            <div class="pro">
+                <img src="images/case5.svg" alt="">
+
+                <div class="des"> 
+                    <h5>Pc case 1</h5>
+
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$69</h4>
+                </div>
+
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+
+            </div>
+            <div class="pro">
+                <img src="images/case5.svg" alt="">
+
+                <div class="des"> 
+                    <h5>Pc case 1</h5>
+
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$79</h4>
+                </div>
+
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span class="yellow">special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="images/logo.svg" id="footer-logo" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Bucandala III, Imus City, Cavite</p>
+            <p><strong>Phone: </strong> (+63) 968 471 3256</p>
+            <p><strong>Hours: </strong> 8 AM - 6 PM (Mon - Sat)</p>
+            <div class="follow section-m1">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        
+        
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Customer Support</a>
+        </div>
+        
+        <div class="col payment">
+            <h4>Secured Payment Gateways</h4>
+            <div class="row">
+                <img src="images/payment/gcash.svg" alt="">
+                <img src="images/payment/visa.svg" alt="">
+                <img src="images/payment/mastercard.svg" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&#169; 2024, GlaciAir Cases</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImage");
+        var smallImg = document.getElementsByClassName("small-img")
+
+        smallImg[0].onclick = function(){
+            MainImg.src = smallImg[0].src
+        }
+        smallImg[1].onclick = function(){
+            MainImg.src = smallImg[1].src
+        }
+        smallImg[2].onclick = function(){
+            MainImg.src = smallImg[2].src
+        }
+        smallImg[3].onclick = function(){
+            MainImg.src = smallImg[3].src
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>GlaciAir</title>
+</head>
+<body> 
+    <header>
+        <a href="index.html"><img src="images/logo.svg" class="logo" alt=""></a>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit" id="search-button"><img src="images/search.png" alt="searchicon" width="20" height="20"></button>
+                <div class="search-suggestions"></div>
+            </div>
+            <button id="cart-button"><img src="images/cart.svg" id="navcart" alt=""></button>
+        </nav>
+    </header>
+
+  
+    <div id="cart-sidebar" class="cart-sidebar close" >
+        <button id="close-cart">&times;</button>
+        <h3>Your Cart</h3>
+        <div class="just-container">
+            <div id="cart-items">
+                <!-- Cart items will be appended here -->
+            </div>
+        </div>
+     
+        <button id="checkout-btn">CHECKOUT</button>
+        <h3 id="total-price"></h3>
+    </div>
+
+
+
+    <div class="about-container">
+        <main class="about-main">
+            <section class="intro">
+                <h1>Welcome to GlaciAir.</h1>
+                <p>At GlaciAir, we’re dedicated to redefining the gaming experience through our expertly crafted PC cases. 
+                    Our mission is to deliver products that seamlessly blend exceptional airflow with premium quality and striking aesthetics. 
+                    Just as our name suggests—GlaciAir, a fusion of 'glacier' representing cool and 'air' symbolizing 
+                    optimal airflow—we focus on keeping your system cool while maintaining top-tier performance and style.</p>
+            </section>
+    
+            <section class="intro">
+                <h2>Our Vision</h2>
+                <p>Our vision is to be at the forefront of the gaming industry by consistently pushing the boundaries of design and functionality. 
+                    We believe that a high-performance gaming rig shouldn’t compromise on aesthetics or cooling efficiency. 
+                    That’s why we pour our passion and expertise into creating PC cases that offer the best of both worlds.</p>
+            </section>
+          
+    
+            <div class="end">
+               <h4>More than <strong class="emphasize">100,000 </strong>gamers are satisfied with their components' temperatures, while using GlaciAir Tower Cases</h4>
+            </div>
+    
+            <section class="intro">
+                <h2>Why Choose GlaciAir?</h2>
+                <p><b>Superior Airflow:</b> Our cases are engineered with advanced airflow dynamics to ensure your components stay cool, even under the most intense gaming sessions.</p>
+                <p><b>Uncompromising Quality:</b> We use only the finest materials and craftsmanship to build cases that are not only durable but also exude elegance.</p>
+                <p><b>Striking Aesthetics:</b> Our designs are inspired by the sleek, clean lines of glaciers, providing a visually stunning addition to any setup.</p>
+                <p><b>Innovative Features:</b> We incorporate cutting-edge technology and thoughtful design elements to enhance usability and performance.</p>
+            </section>
+    
+            <a href="shop.html"><button id="browse-products">Go to Shop</button></a>
+        </main>
+       
+        <aside>
+            <img src="images/case1.svg" alt="">
+            <img src="images/case1.svg" alt="">
+         </aside>
+    </div>
+  
+    <article>
+        <div class="comment-section">
+            <h2>Comments</h2>
+
+            <div class="comment-form">
+                <textarea placeholder="Write a comment..."></textarea>
+                <button type="submit">Post Comment</button>
+            </div>
+
+            <div class="comments">
+                <div class="comment">
+                    <p><strong>Ashter:</strong> GlaciAir is such a great brand! I would be buying more soon for my two sons.</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Cardo:</strong> This brand never disappoints. The first time I bought this I was already expecting this to have great quality, but it even exceeded
+                    my expectations! My temperatures never exceeded 58 degrees.</p>
+                </div>
+                <!-- Add more comments as needed -->
+            </div>
+        </div>
+    </article>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span class="yellow">special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="images/logo.svg" id="footer-logo" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Bucandala III, Imus City, Cavite</p>
+            <p><strong>Phone: </strong> (+63) 968 471 3256</p>
+            <p><strong>Hours: </strong> 8 AM - 6 PM (Mon - Sat)</p>
+            <div class="follow section-m1">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        
+        
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Customer Support</a>
+        </div>
+        
+        <div class="col payment">
+            <h4>Secured Payment Gateways</h4>
+            <div class="row">
+                <img src="images/payment/gcash.svg" alt="">
+                <img src="images/payment/visa.svg" alt="">
+                <img src="images/payment/mastercard.svg" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&#169; 2024, GlaciAir Cases</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
